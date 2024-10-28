@@ -1,0 +1,45 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "create-block/divo-card2",
+	"version": "0.1.0",
+	"title": "Divo Card2",
+	"category": "widgets",
+	"icon": "smiley",
+	"description": "Example block scaffolded with Create Block tool.",
+	"example": {},
+	"parent": ["create-block/divo-card"],
+	"supports": {
+		"html": false,
+		"color": {
+			"gradients": true,
+			"background": true,
+			"text": true
+		},
+		"spacing": {
+			"padding": true,
+			"margin": true
+		},
+		"typography": {
+			"fontSize": true
+		}
+	},
+	"attributes": {
+		"title": {
+			"type": "string"
+		},
+		"fontSize": {
+			"type": "number"
+		},
+		"rating": {
+			"type": "number"
+		},
+		"image": {
+			"type": "object"
+		}
+	},
+	"textdomain": "divo-card",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css"
+}
